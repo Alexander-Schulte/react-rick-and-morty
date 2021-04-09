@@ -1,8 +1,23 @@
 .App {
-  height: 100vh;
   display: grid;
-  place-items: center;
+  grid-template-rows: [header] 80px [main] auto;
+  gap: 10px;
   color: #04b1c5;
+
+  width: 100vw;
   background-color: #111440;
   font-size: 2em;
+}
+
+.Header {
+  grid-row: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.Main {
+  display: flex;
+  grid-row: main;
 }
