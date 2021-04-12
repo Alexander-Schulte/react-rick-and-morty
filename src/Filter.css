@@ -1,0 +1,47 @@
+.Filter {
+  margin: 10px;
+  color: #87d1db;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DivName {
+  display: flex;
+  flex-direction: column;
+}
+
+.DivStatus {
+  display: flex;
+  flex-direction: column;
+}
+
+.SearchCharacter {
+  border-radius: 10px;
+  height: 15px;
+  width: 80px;
+}
+
+.LabelStatus {
+  margin: 5px;
+}
+
+.LabelName {
+  margin: 5px;
+}
+.SubmitButton {
+  padding: 0;
+  margin: 5px;
+  width: 40px;
+  height: 20px;
+  background-color: #87d1db;
+  border-radius: 10px;
+}
+
+.SubmitButton:hover {
+  background-color: #c9f6b7;
+}

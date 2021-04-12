@@ -1,0 +1,58 @@
+.CharacterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.CharacterCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  margin: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.CharacterName {
+  margin: 0;
+  text-align: center;
+  padding-top: 5px;
+  color: #27303c;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-weight: 600;
+}
+
+.CharacterImage {
+  width: 120px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid #262c3a;
+  border-radius: 40px;
+}
+
+.Dead {
+  background-color: red;
+}
+.Alive {
+  background-color: green;
+}
+.unknown {
+  background-color: grey;
+}
+
+.LoadButton {
+  height: 30px;
+  width: 170px;
+  margin: 10px;
+}
