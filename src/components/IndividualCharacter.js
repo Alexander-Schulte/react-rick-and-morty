@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "../IndividualCharacter.css";
 
 export default function IndividualCharacter() {
   const { id } = useParams();
@@ -20,12 +21,12 @@ export default function IndividualCharacter() {
 
   return (
     <article className={`IndividualCharacter ${character.status}`}>
-      <h4>{character.name}</h4>
+      <h4 className="individualName">{character.name}</h4>
       <div className="IndividualCharacterBox">
         <img
           alt={character.name}
           src={character.image}
-          className="CharacterImage"
+          className="IndiviualCharacterImage"
         />
         <ul className="Description">
           <li>Status: {character.status}</li>

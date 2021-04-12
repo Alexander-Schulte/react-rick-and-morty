@@ -1,0 +1,26 @@
+.IndividualCharacter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  margin: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.IndividualCharacterImage {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 1px solid #262c3a;
+  border-radius: 40px;
+}
+
+.individualName {
+  font-size: 20px;
+}

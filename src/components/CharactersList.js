@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Filter from "./Filter";
+import "../CharacterList.css";
 
 function CharactersList() {
   const [characters, setCharacters] = useState([]);
@@ -60,9 +61,9 @@ function CharactersList() {
         console.log(characters);
 
         return (
-          <li key={id} className={`Character ${character.status}`}>
+          <li key={id} className={`CharacterCards ${character.status}`}>
             <Link to={`/characters/${id}`}>
-              <h3>{name}</h3>
+              <h3 className="CharacterName">{name}</h3>
             </Link>
             <img src={image} alt={name} className="CharacterImage" />
           </li>
@@ -71,12 +72,13 @@ function CharactersList() {
   }
 
   return (
-    <div className="CharacterList">
+    <div>
       <Filter onFilterName={onFilterName} onFilterStatus={onFilterStatus} />
-      <ul>{renderCharacters()}</ul>
+      <ul className="CharacterList">{renderCharacters()}</ul>
+
       {page < totalPages && (
         <button className="LoadButton" onClick={handleLoadMore}>
-          Load more Character!
+          Load
         </button>
       )}
     </div>

@@ -25,6 +25,9 @@ function App() {
             </Route>
           </Switch>
         </main>
+        <footer className="Footer">
+          <p>Made with Love</p>
+        </footer>
       </div>
     </Router>
   );
